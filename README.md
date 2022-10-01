@@ -26,3 +26,5 @@
 Gfortran 사용
 
 https://github.com/Pepsi-Coca-cola/fortran_study
+
+https://fortran-lang.org/en/learn/os_setup/

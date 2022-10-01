@@ -1,15 +1,17 @@
-program tabulate
-    use user_functions
+real :: a,b,c,d,f
+integer,parameter :: t = 7292
+real,parameter :: pi = 4. * atan(1.)
 
-    implicit none
-    real    :: x, xbegin, xend
-    integer :: i, steps
+open(1, file='01.dat')
 
-    write(*,*) 'Please enter the range (begin, end) and the number of steps:'
-    read(*,*)  xbegin, xend, steps
+write(*,*) ' t= ' , t
+write(*,*)'pi=' , pi
 
-    do i = 0, steps
-        x = xbegin + i * (xend - xbegin) / steps
-        write(*,'(2f10.4)') x, f(x)
-    end do
-end program tabulate
+do i = -90,90,1
+    a= i*1.0
+    write(*,*)a
+    f = 2. * (t * 0.001) * sin(a*pi/180.)
+    write(1,*)f,i
+end do
+
+end
