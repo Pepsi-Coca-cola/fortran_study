@@ -1,0 +1,2 @@
+       write(*,*)'minji babo'
+       end
