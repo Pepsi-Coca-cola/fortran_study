@@ -1,0 +1,3 @@
+! sdfasdlfua
+write(*,*)'bob'
+end
