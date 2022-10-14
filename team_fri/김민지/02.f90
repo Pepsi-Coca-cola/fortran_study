@@ -1,3 +1,0 @@
-! sdfasdlfua
-write(*,*)'bob'
-end
